@@ -50,7 +50,6 @@ html body{
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
-
 }
 body{
     line-height: 2;
@@ -59,7 +58,7 @@ body{
 header{
     padding: 3% 0;
     margin: 3% 0;
-    background-color: whitesmoke;
+    background-color: beige;
 }
 header nav{
     display: flex;
@@ -83,6 +82,15 @@ nav a{
     position: relative;
     height: 350px;
 }
+.pSection{
+    background-color: beige;
+    margin: 3% 0;
+}
+.workSmarter{
+    background-color: beige;
+    text-align: center;
+    margin: 0% auto;
+}
 .featuresSection{
     display:flex;
     flex-direction: row;
@@ -90,8 +98,30 @@ nav a{
 }
 .features{
     margin: 0 3%;
-    background-color: whitesmoke;
+    background-color: beige;
+}
+@media (max-width: 800px){
+    .featuresSection{
+        flex-direction: column;
+    }
+    .features{
+        margin:3%;
+    }
 }
 footer {
     text-align: center;
+    background-color: beige;
+}
+/* About us Page */
+.headShot{
+    width:20%;
+    height:20%;
+}
+.individualContainer {
+    display: flex;
+    flex-direction: row;
+}
+.individualContainer img{
+    margin: auto 2%;
+    border-radius: 50%;
 }
