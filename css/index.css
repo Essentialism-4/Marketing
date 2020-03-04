@@ -212,13 +212,15 @@ html body h3 {
   background-color: beige;
   box-shadow: 5px 5px;
   padding: 2%;
+  width: 25%;
 }
 @media (max-width: 800px) {
   .featuresSection {
     flex-direction: column;
   }
   .features {
-    margin: 3%;
+    margin: 3% auto;
+    width: 90%;
   }
 }
 .memberContainer h1 {
