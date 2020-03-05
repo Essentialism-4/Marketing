@@ -164,6 +164,8 @@ html body {
   line-height: 2;
   padding: 0 4%;
   font-family: 'Montserrat', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
 }
 html body h1,
 html body h2,
@@ -175,6 +177,7 @@ html body h3 {
 .bannerLogo {
   position: relative;
   height: 350px;
+  width: 100%;
   box-shadow: 5px 5px;
 }
 .pSection {
@@ -207,6 +210,11 @@ html body h3 {
   flex-direction: row;
   margin: 5% 2%;
 }
+@media (max-width: 800px) {
+  .featuresSection {
+    flex-direction: column;
+  }
+}
 .features {
   margin: 0 3%;
   background-color: beige;
@@ -215,12 +223,10 @@ html body h3 {
   width: 25%;
 }
 @media (max-width: 800px) {
-  .featuresSection {
-    flex-direction: column;
-  }
   .features {
     margin: 3% auto;
     width: 90%;
+    height: 25%;
   }
 }
 .memberContainer h1 {
@@ -237,6 +243,17 @@ html body h3 {
     width: 50%;
   }
 }
+.bannerLogoMeet {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  box-shadow: 5px 5px;
+}
+@media (max-width: 800px) {
+  .bannerLogoMeet {
+    display: none;
+  }
+}
 .headShot {
   width: 25%;
   height: 25%;
@@ -249,28 +266,29 @@ html body h3 {
   flex-direction: row;
   margin: 5% 0;
 }
-.individualContainer img {
-  margin: auto 2%;
-  border-radius: 50%;
-  box-shadow: 5px 5px;
-}
-.individualContainer a {
-  text-decoration: none;
-}
 @media (max-width: 800px) {
   .individualContainer {
     flex-direction: column;
     align-items: center;
   }
 }
+.individualContainer img {
+  margin: auto 2%;
+  border-radius: 50%;
+  box-shadow: 5px 5px;
+}
 @media (max-width: 500px) {
   .individualContainer img {
     width: 50%;
   }
+}
+.individualContainer a {
+  text-decoration: none;
 }
 footer {
   text-align: center;
   background-color: beige;
   border-radius: 25px;
   margin: 3% 0;
+  box-shadow: 5px 5px;
 }

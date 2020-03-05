@@ -1,15 +1,24 @@
-.memberContainer h1{
-    background-color: beige;
-    text-align: center;
-    margin: 3% auto;
-    width: 50%;
-    box-shadow: 5px 5px;
-    font-size: 2rem;
-    border-radius: 25px;
-}
-@media @phone{
-    .memberContainer h1{
+.memberContainer{ 
+    h1{
+        background-color: @mainColor;
+        text-align: center;
+        margin: 3% auto;
         width: 50%;
+        box-shadow: 5px 5px;
+        font-size: 2rem;
+        border-radius: 25px;
+        @media @phone{
+            width: 50%;
+        }
+    }
+}
+.bannerLogoMeet{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    box-shadow: 5px 5px;
+    @media @tablet{
+        display: none;
     }
 }
 .headShot{
@@ -23,23 +32,19 @@
     display: flex;
     flex-direction: row;
     margin: 5% 0;
+    @media @tablet{
+        flex-direction: column;
+        align-items: center;        
+    }
     img{
         margin: auto 2%;
         border-radius: 50%;
         box-shadow: 5px 5px;
+        @media @phone{
+               width: 50%;
+        }
     }
     a{ 
         text-decoration: none;
-    }
-}
-@media @tablet{
-    .individualContainer{
-        flex-direction: column;
-        align-items: center;        
-    }
-}
-@media @phone{
-    .individualContainer img{
-       width: 50%;
     }
 }
