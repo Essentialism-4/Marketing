@@ -6,63 +6,67 @@ html {
         background-repeat: repeat;
         line-height: 2;
         padding:0 4%;      
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Playfair Display', serif;
+        
+        max-width: 900px; 
+        margin: 0 auto;        
         h1, h2, h3{  
-            font-family: 'Playfair Display', serif;
+            font-family: 'Montserrat', sans-serif;
             font-weight: bold;
             font-style: italic;
         }
-
+        h2{
+            font-size: 2rem;
+            background-color: none;
+        }
     }
 }
 .bannerLogo{
     position: relative;
     height: 350px;
+    width: 100%;
     box-shadow: 5px 5px;
 }
 .pSection{
-    background-color: beige;
+    div{
+    background: rgba(245, 245, 220, 0.6);
     margin: 5% 0;
     box-shadow: 5px 5px;
-    border-radius: 0 25px 25px 0;
+    border-radius: 0 0 25px 0;
     padding: 2%;
-}
-@media @tablet{
-    .pSection{
-        border-radius: 0 0 25px 0;
+    }
+    h2{
+        text-shadow: 3px 3px black;
+        color: @mainColor;
     }
 }
 .workSmarter{
-    background-color: beige;
     text-align: center;
     margin: 5% auto;
-    width: 25%;
-    box-shadow: 5px 5px;
-    border-radius: 25px;
-}
-@media @tablet{
-    .workSmarter{
-        width:45%;
-    }
+    color: @mainColor;
+    text-shadow: 3px 3px black;
 }
 .featuresSection{
     display:flex;
     flex-direction: row;
     margin:5% 2%;  
+    @media @tablet{
+    flex-direction: column;
+    }
+
 }
 .features{
     margin: 0 3%;
-    background-color: beige;
+    background-color: rgba(245, 245, 220, 0.6);
     box-shadow: 5px 5px;
     padding: 2%;
     width: 25%;
-}
-@media @tablet{
-    .featuresSection{
-        flex-direction: column;
-    }
-    .features{
+    @media @tablet{
         margin:3% auto;
         width: 90%;
-    }
+        height: 25%;
+        }
+        h3{
+            font-size: 18px;
+        }
 }
