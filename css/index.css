@@ -136,10 +136,6 @@ header nav {
   padding-right: 5%;
   padding-left: 5%;
 }
-header nav a {
-  text-decoration: none;
-  color: black;
-}
 header nav div {
   display: flex;
   margin: auto 0;
@@ -150,11 +146,70 @@ header nav .rightHeader {
   width: 40%;
   margin: 3% 0;
 }
+header nav .rightHeader a {
+  text-decoration: none;
+  color: black;
+}
+header nav .rightHeader a:hover {
+  filter: drop-shadow(0 0 20px black);
+}
 @media (max-width: 800px) {
   header nav div img {
     width: 270px;
     height: 90px;
   }
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 html body {
   background-image: url("https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
